@@ -5,6 +5,20 @@ enlazas y mantienes las páginas markdown de este repositorio. No es documentaci
 para humanos: son reglas que debes seguir de forma estricta cada vez que proceses
 una fuente, respondas una consulta o ejecutes un lint.
 
+## 1. Propósito y Alcance
+
+Este vault es específicamente la base de investigación personal sobre **gestión
+del conocimiento** (knowledge management): teorías, modelos, frameworks,
+metodologías, herramientas, autores/pensadores y casos de estudio del campo, más
+las conexiones entre todos ellos. No es un vault de propósito general — toda
+decisión de categorización (ver `subtype` en la regla 2) debe tomarse pensando en
+qué hace más fácil comparar y conectar ideas dentro de este dominio.
+
+El objetivo explícito es doble: (1) que cualquier página pueda consultarse de
+forma aislada y autosuficiente, y (2) que el conjunto del wiki revele conexiones
+entre ideas que no serían obvias leyendo las fuentes por separado — esa síntesis
+es el valor que este vault añade sobre las fuentes crudas.
+
 El wiki tiene tres capas. Nunca mezcles su rol:
 
 | Capa | Carpeta | Quién escribe | Mutabilidad |
@@ -15,7 +29,7 @@ El wiki tiene tres capas. Nunca mezcles su rol:
 | Consultas archivadas | `30_Queries/` | Tú, a petición del humano | Vivo |
 | Archivo histórico | `40_Archive/` | Tú, cuando una página queda superada | Solo-anexo (no se borra) |
 
-## 1. Reglas de Frontmatter (YAML)
+## 2. Reglas de Frontmatter (YAML)
 
 Toda página en `20_Wiki/` y `30_Queries/` DEBE empezar con frontmatter YAML.
 Campos obligatorios para cualquier tipo de página:
@@ -24,6 +38,7 @@ Campos obligatorios para cualquier tipo de página:
 ---
 title: "Título exacto de la página"
 type: entity | concept | source | synthesis | query
+subtype: ""      # solo entity/concept — ver tabla de subtipos abajo
 status: draft | stable | superseded
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -39,14 +54,30 @@ Reglas adicionales por tipo:
 - **`source`** (páginas en `20_Wiki/sources/`): añade `source_path` (ruta exacta en
   `10_Raw/`) y `source_date` (fecha de publicación/origen de la fuente, si se conoce).
 - **`entity`** / **`concept`**: `related` debe listar toda página que la mencione o
-  sea mencionada por ella — el enlace debe ser bidireccional (ver regla 3).
+  sea mencionada por ella — el enlace debe ser bidireccional (ver regla 4). Además,
+  DEBE llevar `subtype` con uno de estos valores controlados (propios del dominio
+  de gestión del conocimiento):
+
+  | `subtype` | Se usa para | Tipo (`type`) típico |
+  |---|---|---|
+  | `teoria` | Teorías explicativas (ej. creación de conocimiento, aprendizaje organizacional) | `concept` |
+  | `framework` | Modelos/frameworks estructurados (ej. SECI, DIKW) | `concept` |
+  | `metodologia` | Prácticas o procesos aplicados (ej. comunidades de práctica, retrospectivas) | `concept` |
+  | `herramienta` | Software o sistemas concretos (ej. Obsidian, un wiki interno) | `entity` |
+  | `autor` | Personas — pensadores, investigadores, practicantes | `entity` |
+  | `organizacion` | Empresas, instituciones, comunidades | `entity` |
+  | `caso-de-estudio` | Aplicaciones documentadas en un contexto real | `entity` |
+
+  Si una página nueva no encaja en ningún valor de esta tabla, propón al humano un
+  `subtype` nuevo antes de usarlo y añádelo aquí si se aprueba — no inventes valores
+  sueltos.
 - **`query`** (páginas en `30_Queries/`): añade `question` (la pregunta original tal
   como se formuló).
 
 Nunca dejes `updated` desactualizado tras una edición. Nunca inventes un campo fuera
 de este esquema sin proponerlo antes al humano y documentarlo aquí.
 
-## 2. Reglas de Nomenclatura y Formato
+## 3. Reglas de Nomenclatura y Formato
 
 - Nombre de archivo en `kebab-case` y en el mismo idioma que el contenido de la
   página, ej: `20_Wiki/entities/juan-perez.md`.
@@ -66,7 +97,7 @@ de este esquema sin proponerlo antes al humano y documentarlo aquí.
   4. `## Fuentes` (lista de fuentes citadas)
   5. `## Ver también` (enlaces relacionados no cubiertos ya en el cuerpo)
 
-## 3. Reglas de Enlazado
+## 4. Reglas de Enlazado
 
 - Todo enlace debe ser bidireccional: si la página A enlaza a B, B debe listar A en
   su `related` (frontmatter) y, si es relevante, en su sección `## Ver también`.
@@ -77,7 +108,7 @@ de este esquema sin proponerlo antes al humano y documentarlo aquí.
 - Si un concepto se menciona repetidamente sin tener página propia, propón al humano
   crear una página dedicada en el siguiente lint.
 
-## 4. Reglas de Actualización y Contradicciones
+## 5. Reglas de Actualización y Contradicciones
 
 - Nunca borres contenido para "corregirlo". Si una fuente nueva contradice o
   reemplaza una afirmación anterior:
@@ -91,7 +122,7 @@ de este esquema sin proponerlo antes al humano y documentarlo aquí.
   si ya no aporta valor de navegación, muévela a `40_Archive/` conservando su
   historial de frontmatter.
 
-## 5. Flujo de Ingesta
+## 6. Flujo de Ingesta
 
 Cuando el humano indique procesar una fuente nueva en `10_Raw/`:
 
@@ -103,13 +134,13 @@ Cuando el humano indique procesar una fuente nueva en `10_Raw/`:
 4. Actualiza toda página de `entity`/`concept`/`synthesis` afectada por la nueva
    información — no te limites a la página de la fuente.
 5. Actualiza `index.md` con cualquier página nueva o modificada.
-6. Añade una entrada en `log.md` (ver formato en la sección 7).
+6. Añade una entrada en `log.md` (ver formato en la sección 9).
 
 Nota sobre imágenes: no puedes leer markdown con imágenes inline en una sola
 pasada. Lee primero el texto, luego revisa las imágenes referenciadas por separado
 si aportan contexto necesario.
 
-## 6. Flujo de Consulta
+## 7. Flujo de Consulta
 
 Cuando el humano haga una pregunta contra el wiki:
 
@@ -123,7 +154,7 @@ Cuando el humano haga una pregunta contra el wiki:
    `30_Queries/` siguiendo las reglas de frontmatter y enlazado ya descritas.
 5. Si se archiva, actualiza `index.md` y `log.md` igual que en una ingesta.
 
-## 7. Flujo de Lint
+## 8. Flujo de Lint
 
 Cuando el humano pida un chequeo de salud del wiki, revisa:
 
@@ -133,12 +164,17 @@ Cuando el humano pida un chequeo de salud del wiki, revisa:
 - Conceptos mencionados repetidamente sin página propia.
 - Referencias cruzadas faltantes o rotas (wikilinks a páginas inexistentes).
 - Vacíos de información que podrían llenarse con una fuente nueva o búsqueda web.
+- Páginas `entity`/`concept` sin `subtype` o con un `subtype` fuera de la tabla
+  de la regla 2.
+- Páginas del mismo `subtype` que nunca se comparan entre sí en ninguna síntesis
+  (ej. dos `framework` sin una página que los contraste) — señal de una conexión
+  todavía sin tejer.
 
 Reporta hallazgos al humano antes de aplicar cambios masivos; aplica solo las
 correcciones triviales (enlaces rotos, `updated` desactualizado) de forma directa.
 Registra el lint en `log.md` con las páginas tocadas.
 
-## 8. Mantenimiento de `index.md` y `log.md`
+## 9. Mantenimiento de `index.md` y `log.md`
 
 Ver `index.md` y `log.md` para su estructura exacta. Regla general:
 

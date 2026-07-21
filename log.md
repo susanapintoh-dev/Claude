@@ -5,8 +5,9 @@ consultas archivadas y lints. Nunca edites ni borres una entrada existente —
 si algo se corrige, añade una entrada nueva que lo indique.
 
 Cada entrada empieza con el prefijo `## [YYYY-MM-DD] tipo | Título`, donde
-`tipo` es `ingest`, `query` o `lint`. Este prefijo consistente permite
-inspeccionar el historial con herramientas unix, ej:
+`tipo` es `ingest`, `query`, `lint` o `meta` (cambios al esquema/gobernanza en
+`CLAUDE.md` — ver regla 1). Este prefijo consistente permite inspeccionar el
+historial con herramientas unix, ej:
 
 ```sh
 grep "^## \[" log.md | tail -5
@@ -35,6 +36,23 @@ Plantilla de entrada:
 - Pendiente de decisión humana: ...
 ```
 
+```markdown
+## [YYYY-MM-DD] meta | Cambio de esquema
+- Cambio: ...
+- Motivo: ...
+- Páginas/archivos afectados: ...
+```
+
 ---
 
-_(sin entradas todavía — la primera ingesta o consulta añade la primera línea aquí)_
+## [2026-07-21] meta | Alcance del vault: gestión del conocimiento y taxonomía de subtipos
+- Cambio: se añadió la sección 1 (Propósito y Alcance) a `CLAUDE.md`, declarando
+  el vault como dedicado específicamente a investigación sobre gestión del
+  conocimiento; se añadió el campo `subtype` (controlado: `teoria`, `framework`,
+  `metodologia`, `herramienta`, `autor`, `organizacion`, `caso-de-estudio`) para
+  páginas `entity`/`concept`; se renumeraron las secciones 2–9 de `CLAUDE.md`.
+- Motivo: petición explícita del humano de especializar el vault para poder
+  consultarlo con facilidad y conectar ideas del dominio entre sí.
+- Páginas/archivos afectados: `CLAUDE.md`, `index.md` (nota de alcance + columna
+  `Subtipo` en Entidades/Conceptos), [[Gestión del Conocimiento]] (página hub
+  nueva en `20_Wiki/synthesis/`).
