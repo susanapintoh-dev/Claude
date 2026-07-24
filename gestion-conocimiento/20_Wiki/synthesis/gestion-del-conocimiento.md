@@ -3,7 +3,7 @@ title: "Gestión del Conocimiento"
 type: synthesis
 status: draft
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-24
 aliases: ["Knowledge Management", "KM"]
 tags: ["hub"]
 related: []
@@ -43,3 +43,5 @@ _(ninguna todavía)_
 ## Ver también
 
 - [[Índice]]
+- [[Profesional]] (vault: profesional) — cuando un framework o teoría de este
+  vault se aplique explícitamente a políticas, financiamiento o procesos de I+D.

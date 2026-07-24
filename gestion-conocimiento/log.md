@@ -56,3 +56,20 @@ Plantilla de entrada:
 - Páginas/archivos afectados: `CLAUDE.md`, `index.md` (nota de alcance + columna
   `Subtipo` en Entidades/Conceptos), [[Gestión del Conocimiento]] (página hub
   nueva en `20_Wiki/synthesis/`).
+
+## [2026-07-24] meta | Migración a monorepo multi-vault
+- Cambio: este vault se movió de la raíz del repositorio a la carpeta
+  `gestion-conocimiento/` (todo su contenido intacto: `CLAUDE.md`, `index.md`,
+  `log.md`, `00_Meta/`, `10_Raw/`, `20_Wiki/`, `30_Queries/`, `40_Archive/`).
+  El repositorio ahora aloja varios vaults hermanos (`profesional/`,
+  `idiomas/`, `ia/`), cada uno con su propio `CLAUDE.md`; un `CLAUDE.md` nuevo
+  en la raíz del repo actúa como mapa y define la regla de enlaces cruzados
+  con `profesional/` (única excepción al aislamiento entre vaults). Se añadió
+  un enlace cruzado inicial de [[Gestión del Conocimiento]] hacia [[Profesional]].
+- Motivo: el humano quiere organizar temáticas no relacionadas (gestión del
+  conocimiento, profesional/I+D+i, idiomas, IA) sin diluir la taxonomía de
+  `subtype` de cada dominio, manteniendo la opción de conectar ideas entre
+  gestión del conocimiento y su vault profesional cuando sea genuinamente relevante.
+- Páginas/archivos afectados: ruta completa del vault (sin cambios de
+  contenido más allá de la ubicación), `../CLAUDE.md` (nuevo, raíz), `../README.md`
+  (nuevo, mapa de vaults), [[Gestión del Conocimiento]] (nuevo enlace de salida).
