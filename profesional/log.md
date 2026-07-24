@@ -56,3 +56,34 @@ Plantilla de entrada:
   intencionales entre ambos (ver `../CLAUDE.md`).
 - Páginas/archivos afectados: `profesional/CLAUDE.md`, `profesional/index.md`,
   [[Profesional]], `../CLAUDE.md` (raíz, actualizado con el mapa de vaults).
+
+## [2026-07-24] ingest | Incentivos Tributarios para la CTI: Evidencia y Aprendizajes desde América Latina y Europa (BID/FI Group)
+- Fuente: `10_Raw/incentivos-tributarios-cti-bid-borrador-2026-06-01.docx` —
+  borrador consolidado, estudio conjunto BID (División de Competitividad,
+  Tecnología e Innovación) y FI Group. Documento en construcción activa
+  (Prefacio y Resumen Ejecutivo vacíos, notas editoriales sueltas en el
+  cuerpo, numeración de recomendaciones con un salto de "quinta" a "séptima").
+- Páginas creadas:
+  - Fuente: [[Incentivos Tributarios para la CTI: Evidencia y Aprendizajes desde América Latina y Europa (BID/FI Group)]]
+  - Síntesis: [[Incentivos Tributarios a la CTI: Análisis Comparado]]
+  - Conceptos (`subtype: beneficio-tributario`): [[Crédit d'Impôt Recherche (Francia)]],
+    [[Deducción Fiscal por I+D+i (España)]], [[SIFIDE (Portugal)]],
+    [[Lei do Bem (Brasil)]], [[Incentivo Tributario a la Inversión en I+D (Chile)]],
+    [[Beneficios Tributarios en CTI (Colombia)]]
+  - Entidades (`subtype: organizacion`): [[Direction Générale des Finances Publiques (DGFiP)]],
+    [[Ministère de l'Enseignement Supérieur et de la Recherche (MESR)]],
+    [[Ministerio de Ciencia, Innovación y Universidades (MICIU)]],
+    [[Agencia Estatal de Administración Tributaria (AEAT)]],
+    [[Agência Nacional de Inovação (ANI)]], [[Autoridade Tributária e Aduaneira (Portugal)]],
+    [[Ministério da Ciência, Tecnologia e Inovação (MCTI)]], [[Receita Federal do Brasil (RFB)]],
+    [[Corporación de Fomento de la Producción (CORFO)]], [[Servicio de Impuestos Internos (SII)]],
+    [[Ministerio de Ciencia, Tecnología e Innovación (MinCiencias)]],
+    [[Dirección de Impuestos y Aduanas Nacionales (DIAN)]]
+- Páginas actualizadas: [[Profesional]] (mapa de subtemas poblado), `index.md`.
+- Notas: se detectó una inconsistencia en la propia fuente — la Tabla 1
+  introductoria atribuye la certificación del incentivo chileno a la ANID,
+  pero el estudio de caso completo de Chile usa CORFO consistentemente en
+  todo momento. Documentado en [[Incentivo Tributario a la Inversión en I+D (Chile)]]
+  y en la página de fuente; pendiente de aclarar con el equipo del BID. Al
+  llegar una versión más nueva del estudio, se ingiere como actualización de
+  esta misma fuente, comparando explícitamente qué cambió.
