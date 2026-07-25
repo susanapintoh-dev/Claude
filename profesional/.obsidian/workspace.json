@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "64c3c703c990be50",
+    "type": "split",
+    "children": [
+      {
+        "id": "58573e82f4c1c956",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "01bf930b5b783177",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e2ec641bfb71f282",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8c5b4bd8abb988c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "783868c509d7bbd5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "c70f88cb019b3ed0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "c6735b6ba1d461b4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e2e77744f97e9807",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f993d6f88b115fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b41997a441858a6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "7bc467f6eb07d964",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "6e0b7085439cf0d7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "4f7c9ef59965f9d2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "467aed5eee720176",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "01bf930b5b783177",
+  "lastOpenFiles": [
+    "10_Raw/Acuerdo No. 30 de 2021.pdf",
+    "10_Raw/Sin confirmar 986795.crdownload",
+    "10_Raw/Acuerdo No. 28 de 2021 (1).pdf",
+    "10_Raw/Sin confirmar 698222.crdownload",
+    "10_Raw/Acuerdo N° 27 del CNBT 16 FEB. 2021.pdf",
+    "10_Raw/Sin confirmar 319758.crdownload",
+    "10_Raw/Acuerdo N° 26 del CNBT 16 FEB. 2021.pdf",
+    "10_Raw/Sin confirmar 46392.crdownload",
+    "10_Raw/Acuerdo N° 25 del CNBT 31 DIC. 2020.pdf",
+    "10_Raw/Sin confirmar 405783.crdownload",
+    "10_Raw/Anexo 4. Acuerdo 24 del CNBT (1).pdf",
+    "Clippings/Art. 142. Deducción de inversiones.md",
+    "Clippings/¿Cuáles son los Beneficios Tributarios en Colombia.md",
+    "Clippings/Art. 74-1. Costo fiscal de las inversiones.md",
+    "Clippings/Art. 256-1. Crédito Fiscal para inversiones en proyectos de investigación, desarrollo tecnológico e innovación o vinculación de capital humano de alto nivel.md",
+    "Clippings/Art. 256. Descuento para inversiones realizadas en investigación, desarrollo tecnológico o innovación.md"
+  ]
+}
