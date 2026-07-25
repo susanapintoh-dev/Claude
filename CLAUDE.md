@@ -12,14 +12,25 @@ reglas**; solo cubre lo que aplica a todo el repositorio.
 
 | Carpeta | Dominio | Gobernanza |
 |---|---|---|
-| `gestion-conocimiento/` | Teorías, frameworks, metodologías, herramientas y autores de gestión del conocimiento | `gestion-conocimiento/CLAUDE.md` |
-| `profesional/` | Políticas de I+D+i, beneficios tributarios, financiamiento de innovación, valoración de la innovación, procesos de I+D | `profesional/CLAUDE.md` |
-| `idiomas/` | Aprendizaje de francés y portugués | `idiomas/CLAUDE.md` |
-| `ia/` | Inteligencia artificial — conceptos, modelos, herramientas, papers | `ia/CLAUDE.md` |
+| `profesional/` | Ecosistemas de ciencia, tecnología e innovación: financiamiento de I+D+i empresarial, beneficios tributarios, valoración de la innovación, normativas por país | `profesional/CLAUDE.md` |
+| `profesional/gestion-conocimiento/` | Teorías, frameworks, metodologías, herramientas y autores de gestión del conocimiento (conocimiento de trabajo profesional pasado, con impacto directo en innovación) | `profesional/gestion-conocimiento/CLAUDE.md` |
+| `idiomas/` | Aprendizaje de francés y portugués (clases, apuntes, recursos) | `idiomas/CLAUDE.md` |
+| `ia/` | Inteligencia artificial — conceptos, modelos, herramientas, clases, artículos | `ia/CLAUDE.md` |
 
 Cuando el humano te pida trabajar en un vault, entra a esa carpeta, lee su
 `CLAUDE.md` primero, y opera exclusivamente con las reglas de esa carpeta
 (su propio `index.md`, `log.md`, `10_Raw/`, `20_Wiki/`, etc.).
+
+**Nota de carpetas vs. bóvedas de Obsidian**: `gestion-conocimiento/` vive
+anidada *dentro* de `profesional/` a propósito, no porque sea parte de ese
+vault — es para que el humano pueda abrir `profesional/` como una sola
+bóveda de Obsidian y ver ambos vaults juntos, con los wikilinks cruzados
+resolviendo entre sí (ver regla de enlaces cruzados abajo). En la práctica,
+el humano trabaja con **3 bóvedas de Obsidian abiertas por separado**:
+`profesional/` (incluye gestión del conocimiento), `idiomas/`, e `ia/`. Cada
+una sigue siendo gobernada únicamente por su propio `CLAUDE.md` — la
+anidación de carpetas no implica ninguna relación de contenido entre
+`profesional/` e `ia/` o `idiomas/`, que permanecen totalmente aislados.
 
 ## Regla única de alcance repo-wide: enlaces cruzados entre vaults
 

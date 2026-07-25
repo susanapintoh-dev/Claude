@@ -10,15 +10,25 @@ Este vault vive dentro de un monorepo de varios vaults independientes — ver
 enlaces cruzados con `gestion-conocimiento/` (los únicos permitidos hacia/desde
 otro vault). Todo lo demás en este archivo aplica solo dentro de `profesional/`.
 
+Nota de ubicación: `gestion-conocimiento/` vive físicamente anidada *dentro*
+de esta carpeta (`profesional/gestion-conocimiento/`) para que el humano
+pueda abrir `profesional/` como una única bóveda de Obsidian y ver ambos
+vaults juntos, con los wikilinks cruzados resolviendo entre sí. Sigue siendo
+un vault completamente independiente, gobernado por su propio
+`gestion-conocimiento/CLAUDE.md` — no es una subcarpeta temática de este vault.
+
 ## 1. Propósito y Alcance
 
-Este vault es la base de investigación profesional sobre **política y gestión
-de la innovación**: políticas públicas de I+D+i, beneficios tributarios a la
-innovación, mecanismos de financiamiento, metodologías de valoración de la
-innovación y procesos operativos de I+D. Toda decisión de categorización debe
-tomarse pensando en qué hace más fácil comparar y conectar ideas dentro de
-este dominio (ej. comparar dos beneficios tributarios entre sí, o relacionar
-un mecanismo de financiamiento con la política que lo habilita).
+Este vault es la base de investigación profesional para entender
+**ecosistemas de ciencia, tecnología e innovación**: cómo se financia la
+I+D+i empresarial (mecanismos de financiamiento, beneficios tributarios,
+capital de riesgo, convocatorias), qué metodologías existen para valorar la
+innovación, cómo funcionan los procesos operativos de I+D, y qué
+oportunidades y normativas concretas existen país por país. Toda decisión
+de categorización debe tomarse pensando en qué hace más fácil comparar y
+conectar ideas dentro de este dominio (ej. comparar dos beneficios
+tributarios entre sí, relacionar un mecanismo de financiamiento con la
+política que lo habilita, o contrastar la normativa de dos países).
 
 Este dominio se solapa genuinamente con gestión del conocimiento (la gestión
 de la innovación y de I+D usa marcos de KM). Por eso — y solo con ese vault —

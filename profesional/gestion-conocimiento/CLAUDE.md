@@ -6,18 +6,34 @@ humanos: son reglas que debes seguir de forma estricta cada vez que proceses
 una fuente, respondas una consulta o ejecutes un lint.
 
 Este vault vive dentro de un monorepo de varios vaults independientes — ver
-`../CLAUDE.md` (raíz) para el mapa completo y, sobre todo, para la regla de
+`../../CLAUDE.md` (raíz) para el mapa completo y, sobre todo, para la regla de
 enlaces cruzados con `profesional/` (los únicos permitidos hacia/desde otro
 vault). Todo lo demás en este archivo aplica solo dentro de `gestion-conocimiento/`.
 
+Nota de ubicación: esta carpeta vive físicamente *dentro* de `profesional/`
+(en vez de ser hermana de ella) para que el humano pueda abrir `profesional/`
+como una única bóveda de Obsidian y ver ambos vaults juntos, con los
+wikilinks cruzados resolviendo entre sí. Esto es solo una decisión de
+carpetas para la app — `gestion-conocimiento/` sigue siendo un vault
+completamente independiente, con su propio esquema, índice y bitácora; no es
+una subcarpeta temática de `profesional/` ni comparte su taxonomía de `subtype`.
+
 ## 1. Propósito y Alcance
 
-Este vault es específicamente la base de investigación personal sobre **gestión
-del conocimiento** (knowledge management): teorías, modelos, frameworks,
-metodologías, herramientas, autores/pensadores y casos de estudio del campo, más
-las conexiones entre todos ellos. No es un vault de propósito general — toda
-decisión de categorización (ver `subtype` en la regla 2) debe tomarse pensando en
-qué hace más fácil comparar y conectar ideas dentro de este dominio.
+Este vault existe para **no perder el conocimiento acumulado en trabajo
+profesional pasado sobre gestión del conocimiento** (knowledge management):
+teorías, modelos, frameworks, metodologías, herramientas, autores/pensadores
+y casos de estudio del campo, más las conexiones entre todos ellos. Es,
+además, el dominio con más impacto directo sobre innovación — el interés
+profesional principal del humano — lo cual justifica la excepción de enlace
+cruzado con `profesional/` definida en el `CLAUDE.md` raíz: cuando una
+página de este vault explique un mecanismo, framework o práctica que se
+aplique a la gestión de la innovación o de I+D+i, debe enlazarse
+explícitamente hacia la página correspondiente en `profesional/`.
+
+No es un vault de propósito general — toda decisión de categorización (ver
+`subtype` en la regla 2) debe tomarse pensando en qué hace más fácil
+comparar y conectar ideas dentro de este dominio.
 
 El objetivo explícito es doble: (1) que cualquier página pueda consultarse de
 forma aislada y autosuficiente, y (2) que el conjunto del wiki revele conexiones
