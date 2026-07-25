@@ -2,9 +2,10 @@
 title: "Receita Federal do Brasil (RFB)"
 type: entity
 subtype: organizacion
+pais: "Brasil"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["RFB", "Receita Federal"]
 tags: ["brasil", "autoridad-tributaria"]
 related: ["[[Lei do Bem (Brasil)]]", "[[Ministério da Ciência, Tecnologia e Inovação (MCTI)]]"]

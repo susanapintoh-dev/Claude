@@ -2,9 +2,10 @@
 title: "Deducción Fiscal por I+D+i (España)"
 type: concept
 subtype: beneficio-tributario
+pais: "España"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["Deducción por I+D+i", "Ley 27/2014 Art. 35"]
 tags: ["espana", "deduccion-fiscal", "i+d+i"]
 related: ["[[Ministerio de Ciencia, Innovación y Universidades (MICIU)]]", "[[Agencia Estatal de Administración Tributaria (AEAT)]]", "[[Incentivos Tributarios a la CTI: Análisis Comparado]]"]

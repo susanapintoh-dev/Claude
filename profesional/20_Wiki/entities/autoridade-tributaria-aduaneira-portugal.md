@@ -2,9 +2,10 @@
 title: "Autoridade Tributária e Aduaneira (Portugal)"
 type: entity
 subtype: organizacion
+pais: "Portugal"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["AT", "Autoridade Tributária"]
 tags: ["portugal", "autoridad-tributaria"]
 related: ["[[SIFIDE (Portugal)]]", "[[Agência Nacional de Inovação (ANI)]]"]
