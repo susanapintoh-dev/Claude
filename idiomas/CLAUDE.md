@@ -12,12 +12,17 @@ se mantiene aislado salvo que el humano pida lo contrario.
 
 ## 1. Propósito y Alcance
 
-Este vault es la base de aprendizaje personal de **francés y portugués**:
-gramática, vocabulario, expresiones, pronunciación y recursos (libros, apps,
-cursos, tutores). El objetivo es poder consultar una regla o una lista de
-vocabulario de forma aislada, y a la vez que el vault revele paralelismos y
-"falsos amigos" entre los dos idiomas — comparaciones que no serían obvias
-estudiando cada idioma por separado.
+Este vault es la base para desarrollar el conocimiento personal de
+**francés y portugués**: gramática, vocabulario, expresiones, pronunciación
+y recursos (libros, apps, cursos, tutores). Las fuentes crudas en `10_Raw/`
+serán, sobre todo, el material que se recibe en clase (apuntes propios,
+guías del profesor, ejercicios) — no solo artículos o libros externos —, así
+que el flujo de ingesta (regla 6) aplica igual a "clase del martes" que a un
+artículo encontrado en internet. El objetivo es poder consultar una regla o
+una lista de vocabulario de forma aislada, y a la vez que el vault revele
+paralelismos y "falsos amigos" entre los dos idiomas — comparaciones que no
+serían obvias estudiando cada idioma por separado o guardando los apuntes de
+cada clase sueltos sin conectarlos entre sí.
 
 Como ambos idiomas conviven en el mismo vault, toda página DEBE declarar a
 qué idioma pertenece con el campo `idioma` (ver regla 2) — esto es lo que

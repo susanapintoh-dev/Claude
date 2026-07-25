@@ -13,13 +13,15 @@ contrario y lo documentemos en `../CLAUDE.md`.
 
 ## 1. Propósito y Alcance
 
-Este vault es la base de aprendizaje personal sobre **inteligencia
-artificial**: conceptos técnicos, modelos concretos, herramientas/frameworks,
+Este vault es la base para entender **inteligencia artificial** de manera
+integral: conceptos técnicos, modelos concretos, herramientas/frameworks,
 organizaciones/laboratorios, investigadores, publicaciones seminales y casos
-de estudio de aplicación práctica. El humano está aprendiendo IA de forma
-continua (a diario), así que este vault debe optimizarse para acumular
-entendimiento incremental — cada fuente nueva debe conectarse con lo que ya
-existe, no quedar aislada.
+de estudio de aplicación práctica. Las fuentes crudas en `10_Raw/` vienen de
+investigación propia, clases, artículos y otros recursos por igual — el
+flujo de ingesta (regla 6) trata "una clase de hoy" con el mismo cuidado que
+un paper. El humano está aprendiendo IA de forma continua (a diario), así
+que este vault debe optimizarse para acumular entendimiento incremental —
+cada fuente nueva debe conectarse con lo que ya existe, no quedar aislada.
 
 El wiki tiene tres capas. Nunca mezcles su rol:
 

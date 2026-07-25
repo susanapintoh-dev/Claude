@@ -2,9 +2,10 @@
 title: "Agência Nacional de Inovação (ANI)"
 type: entity
 subtype: organizacion
+pais: "Portugal"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["ANI"]
 tags: ["portugal", "autoridad-tecnica"]
 related: ["[[SIFIDE (Portugal)]]", "[[Autoridade Tributária e Aduaneira (Portugal)]]"]

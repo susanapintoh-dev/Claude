@@ -2,9 +2,10 @@
 title: "Dirección de Impuestos y Aduanas Nacionales (DIAN)"
 type: entity
 subtype: organizacion
+pais: "Colombia"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["DIAN"]
 tags: ["colombia", "autoridad-tributaria"]
 related: ["[[Beneficios Tributarios en CTI (Colombia)]]", "[[Ministerio de Ciencia, Tecnología e Innovación (MinCiencias)]]"]

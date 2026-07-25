@@ -56,3 +56,13 @@ Plantilla de entrada:
   entre ambos idiomas mediante `idioma: comparado`.
 - Páginas/archivos afectados: `idiomas/CLAUDE.md`, `idiomas/index.md`,
   [[Idiomas]], `../CLAUDE.md` (raíz, mapa de vaults).
+
+## [2026-07-25] meta | Refinamiento del propósito
+- Cambio: se precisó la sección 1 (Propósito y Alcance) de `CLAUDE.md` —
+  las fuentes crudas de este vault serán sobre todo material de clase
+  (apuntes propios, guías del profesor, ejercicios), no solo artículos
+  externos; el flujo de ingesta trata "la clase de hoy" igual que cualquier
+  otra fuente.
+- Motivo: el humano aclaró que este vault guardará específicamente la
+  información de sus clases de francés y portugués y sus propios apuntes.
+- Páginas/archivos afectados: `idiomas/CLAUDE.md`.

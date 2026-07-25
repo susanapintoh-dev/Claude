@@ -10,15 +10,25 @@ Este vault vive dentro de un monorepo de varios vaults independientes — ver
 enlaces cruzados con `gestion-conocimiento/` (los únicos permitidos hacia/desde
 otro vault). Todo lo demás en este archivo aplica solo dentro de `profesional/`.
 
+Nota de ubicación: `gestion-conocimiento/` vive físicamente anidada *dentro*
+de esta carpeta (`profesional/gestion-conocimiento/`) para que el humano
+pueda abrir `profesional/` como una única bóveda de Obsidian y ver ambos
+vaults juntos, con los wikilinks cruzados resolviendo entre sí. Sigue siendo
+un vault completamente independiente, gobernado por su propio
+`gestion-conocimiento/CLAUDE.md` — no es una subcarpeta temática de este vault.
+
 ## 1. Propósito y Alcance
 
-Este vault es la base de investigación profesional sobre **política y gestión
-de la innovación**: políticas públicas de I+D+i, beneficios tributarios a la
-innovación, mecanismos de financiamiento, metodologías de valoración de la
-innovación y procesos operativos de I+D. Toda decisión de categorización debe
-tomarse pensando en qué hace más fácil comparar y conectar ideas dentro de
-este dominio (ej. comparar dos beneficios tributarios entre sí, o relacionar
-un mecanismo de financiamiento con la política que lo habilita).
+Este vault es la base de investigación profesional para entender
+**ecosistemas de ciencia, tecnología e innovación**: cómo se financia la
+I+D+i empresarial (mecanismos de financiamiento, beneficios tributarios,
+capital de riesgo, convocatorias), qué metodologías existen para valorar la
+innovación, cómo funcionan los procesos operativos de I+D, y qué
+oportunidades y normativas concretas existen país por país. Toda decisión
+de categorización debe tomarse pensando en qué hace más fácil comparar y
+conectar ideas dentro de este dominio (ej. comparar dos beneficios
+tributarios entre sí, relacionar un mecanismo de financiamiento con la
+política que lo habilita, o contrastar la normativa de dos países).
 
 Este dominio se solapa genuinamente con gestión del conocimiento (la gestión
 de la innovación y de I+D usa marcos de KM). Por eso — y solo con ese vault —
@@ -44,6 +54,7 @@ Campos obligatorios para cualquier tipo de página:
 title: "Título exacto de la página"
 type: entity | concept | source | synthesis | query
 subtype: ""      # solo entity/concept — ver tabla de subtipos abajo
+pais: ""         # solo si la página es específica de un país — ver regla 2
 status: draft | stable | superseded
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -77,6 +88,16 @@ Reglas adicionales por tipo:
   `subtype` nuevo antes de usarlo y añádelo aquí si se aprueba.
 - **`query`** (páginas en `30_Queries/`): añade `question` (la pregunta original tal
   como se formuló).
+- **Campo `pais`** (cualquier `type`): cuando una página trate sobre un único
+  país (una política, un beneficio tributario, una entidad ejecutora, un
+  caso de estudio nacional), DEBE llevar `pais` con el nombre del país en
+  español, mayúscula inicial (ej. `"Colombia"`, `"Perú"`, `"Chile"`,
+  `"Francia"`, `"España"`, `"Brasil"`, `"Portugal"`). Esto permite filtrar y
+  consultar por país con Dataview sin depender de subcarpetas por país —
+  este vault se organiza por tipo de página (`entities/concepts/sources/synthesis`),
+  no por país. Páginas que comparan o abarcan varios países (ej. una
+  síntesis comparada, o el estudio fuente del que salen) dejan `pais` vacío
+  o lo omiten — su alcance multi-país ya es evidente en el cuerpo del texto.
 
 Nunca dejes `updated` desactualizado tras una edición. Nunca inventes un campo fuera
 de este esquema sin proponerlo antes al humano y documentarlo aquí.
@@ -149,6 +170,9 @@ de este esquema sin proponerlo antes al humano y documentarlo aquí.
 - `beneficio-tributario` o `mecanismo-financiacion` sin su `politica` habilitante enlazada.
 - Conexiones no tejidas con `gestion-conocimiento/` cuando un proceso de I+D
   claramente aplica un framework de ese vault.
+- Páginas específicas de un país sin campo `pais`, o con un valor que no
+  coincide con el nombre usado en otras páginas del mismo país (ej.
+  `"Perú"` vs. `"Peru"` sin tilde).
 
 ## 9. Mantenimiento de `index.md` y `log.md`
 

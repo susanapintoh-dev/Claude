@@ -55,3 +55,12 @@ Plantilla de entrada:
   incremental.
 - Páginas/archivos afectados: `ia/CLAUDE.md`, `ia/index.md`, [[IA]],
   `../CLAUDE.md` (raíz, mapa de vaults).
+
+## [2026-07-25] meta | Refinamiento del propósito
+- Cambio: se precisó la sección 1 (Propósito y Alcance) de `CLAUDE.md` —
+  las fuentes crudas de este vault vienen por igual de investigación
+  propia, clases, artículos y otros recursos; el flujo de ingesta trata
+  "una clase de hoy" con el mismo cuidado que un paper.
+- Motivo: el humano aclaró que este vault guardará su investigación, clases,
+  artículos y recursos sobre IA.
+- Páginas/archivos afectados: `ia/CLAUDE.md`.

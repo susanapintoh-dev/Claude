@@ -2,9 +2,10 @@
 title: "SIFIDE (Portugal)"
 type: concept
 subtype: beneficio-tributario
+pais: "Portugal"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["SIFIDE II", "Sistema de Incentivos Fiscais à I&D Empresarial"]
 tags: ["portugal", "deduccion-fiscal", "i+d"]
 related: ["[[Agência Nacional de Inovação (ANI)]]", "[[Autoridade Tributária e Aduaneira (Portugal)]]", "[[Incentivos Tributarios a la CTI: Análisis Comparado]]"]

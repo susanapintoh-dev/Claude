@@ -2,9 +2,10 @@
 title: "Crédit d'Impôt Recherche (Francia)"
 type: concept
 subtype: beneficio-tributario
+pais: "Francia"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["CIR", "Crédit d'Impôt Recherche"]
 tags: ["francia", "credito-fiscal", "i+d"]
 related: ["[[Ministère de l'Enseignement Supérieur et de la Recherche (MESR)]]", "[[Direction Générale des Finances Publiques (DGFiP)]]", "[[Incentivos Tributarios a la CTI: Análisis Comparado]]"]

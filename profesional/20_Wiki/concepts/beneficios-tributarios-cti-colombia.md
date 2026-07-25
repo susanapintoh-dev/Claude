@@ -2,9 +2,10 @@
 title: "Beneficios Tributarios en CTI (Colombia)"
 type: concept
 subtype: beneficio-tributario
+pais: "Colombia"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["Beneficio Tributario a la CTeI", "Artículo 256 y 256-1 E.T."]
 tags: ["colombia", "descuento-tributario", "credito-fiscal", "cti"]
 related: ["[[Ministerio de Ciencia, Tecnología e Innovación (MinCiencias)]]", "[[Dirección de Impuestos y Aduanas Nacionales (DIAN)]]", "[[Incentivos Tributarios a la CTI: Análisis Comparado]]"]
