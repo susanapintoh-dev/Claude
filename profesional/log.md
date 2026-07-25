@@ -87,3 +87,19 @@ Plantilla de entrada:
   y en la página de fuente; pendiente de aclarar con el equipo del BID. Al
   llegar una versión más nueva del estudio, se ingiere como actualización de
   esta misma fuente, comparando explícitamente qué cambió.
+
+## [2026-07-25] meta | Anidado de gestion-conocimiento/ + refinamiento del propósito
+- Cambio: `gestion-conocimiento/` (antes hermana de `profesional/`) se movió
+  a `profesional/gestion-conocimiento/`, para que el humano abra
+  `profesional/` como una sola bóveda de Obsidian y los enlaces cruzados
+  entre ambos vaults resuelvan como wikilinks. Sigue gobernada solo por su
+  propio `CLAUDE.md` — no se fusionó su índice ni su bitácora con los de
+  este vault. Se refinó la sección 1 (Propósito y Alcance) de este
+  `CLAUDE.md`: el foco pasa a describirse explícitamente como "ecosistemas
+  de ciencia, tecnología e innovación" — financiamiento de I+D+i empresarial,
+  valoración de la innovación, y oportunidades/normativas país por país.
+- Motivo: el humano aclaró que quiere 3 bóvedas de Obsidian (no 1 ni 4):
+  profesional + gestión del conocimiento juntas (por su relación real vía
+  innovación), idiomas separado, IA separado.
+- Páginas/archivos afectados: `CLAUDE.md` (de este vault), `../CLAUDE.md`
+  (raíz), `../README.md`.
