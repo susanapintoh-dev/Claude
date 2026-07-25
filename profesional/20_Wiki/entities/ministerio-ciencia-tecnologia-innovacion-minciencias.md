@@ -2,9 +2,10 @@
 title: "Ministerio de Ciencia, Tecnología e Innovación (MinCiencias)"
 type: entity
 subtype: organizacion
+pais: "Colombia"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["MinCiencias"]
 tags: ["colombia", "autoridad-tecnica"]
 related: ["[[Beneficios Tributarios en CTI (Colombia)]]", "[[Dirección de Impuestos y Aduanas Nacionales (DIAN)]]"]

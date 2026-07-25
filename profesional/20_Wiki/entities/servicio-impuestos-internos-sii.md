@@ -2,9 +2,10 @@
 title: "Servicio de Impuestos Internos (SII)"
 type: entity
 subtype: organizacion
+pais: "Chile"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["SII"]
 tags: ["chile", "autoridad-tributaria"]
 related: ["[[Incentivo Tributario a la Inversión en I+D (Chile)]]", "[[Corporación de Fomento de la Producción (CORFO)]]"]

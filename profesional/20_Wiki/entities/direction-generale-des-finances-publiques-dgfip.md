@@ -2,9 +2,10 @@
 title: "Direction Générale des Finances Publiques (DGFiP)"
 type: entity
 subtype: organizacion
+pais: "Francia"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["DGFiP"]
 tags: ["francia", "autoridad-tributaria"]
 related: ["[[Crédit d'Impôt Recherche (Francia)]]", "[[Ministère de l'Enseignement Supérieur et de la Recherche (MESR)]]"]
