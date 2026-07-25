@@ -2,9 +2,10 @@
 title: "Corporación de Fomento de la Producción (CORFO)"
 type: entity
 subtype: organizacion
+pais: "Chile"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["CORFO"]
 tags: ["chile", "autoridad-tecnica"]
 related: ["[[Incentivo Tributario a la Inversión en I+D (Chile)]]", "[[Servicio de Impuestos Internos (SII)]]"]

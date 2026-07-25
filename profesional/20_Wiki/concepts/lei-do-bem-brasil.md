@@ -2,9 +2,10 @@
 title: "Lei do Bem (Brasil)"
 type: concept
 subtype: beneficio-tributario
+pais: "Brasil"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["Lei do Bem", "Ley 11.196/2005"]
 tags: ["brasil", "deduccion-fiscal", "i+d+i"]
 related: ["[[Ministério da Ciência, Tecnologia e Inovação (MCTI)]]", "[[Receita Federal do Brasil (RFB)]]", "[[Incentivos Tributarios a la CTI: Análisis Comparado]]"]

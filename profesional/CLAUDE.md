@@ -54,6 +54,7 @@ Campos obligatorios para cualquier tipo de página:
 title: "Título exacto de la página"
 type: entity | concept | source | synthesis | query
 subtype: ""      # solo entity/concept — ver tabla de subtipos abajo
+pais: ""         # solo si la página es específica de un país — ver regla 2
 status: draft | stable | superseded
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -87,6 +88,16 @@ Reglas adicionales por tipo:
   `subtype` nuevo antes de usarlo y añádelo aquí si se aprueba.
 - **`query`** (páginas en `30_Queries/`): añade `question` (la pregunta original tal
   como se formuló).
+- **Campo `pais`** (cualquier `type`): cuando una página trate sobre un único
+  país (una política, un beneficio tributario, una entidad ejecutora, un
+  caso de estudio nacional), DEBE llevar `pais` con el nombre del país en
+  español, mayúscula inicial (ej. `"Colombia"`, `"Perú"`, `"Chile"`,
+  `"Francia"`, `"España"`, `"Brasil"`, `"Portugal"`). Esto permite filtrar y
+  consultar por país con Dataview sin depender de subcarpetas por país —
+  este vault se organiza por tipo de página (`entities/concepts/sources/synthesis`),
+  no por país. Páginas que comparan o abarcan varios países (ej. una
+  síntesis comparada, o el estudio fuente del que salen) dejan `pais` vacío
+  o lo omiten — su alcance multi-país ya es evidente en el cuerpo del texto.
 
 Nunca dejes `updated` desactualizado tras una edición. Nunca inventes un campo fuera
 de este esquema sin proponerlo antes al humano y documentarlo aquí.
@@ -159,6 +170,9 @@ de este esquema sin proponerlo antes al humano y documentarlo aquí.
 - `beneficio-tributario` o `mecanismo-financiacion` sin su `politica` habilitante enlazada.
 - Conexiones no tejidas con `gestion-conocimiento/` cuando un proceso de I+D
   claramente aplica un framework de ese vault.
+- Páginas específicas de un país sin campo `pais`, o con un valor que no
+  coincide con el nombre usado en otras páginas del mismo país (ej.
+  `"Perú"` vs. `"Peru"` sin tilde).
 
 ## 9. Mantenimiento de `index.md` y `log.md`
 

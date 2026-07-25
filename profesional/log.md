@@ -103,3 +103,23 @@ Plantilla de entrada:
   innovación), idiomas separado, IA separado.
 - Páginas/archivos afectados: `CLAUDE.md` (de este vault), `../CLAUDE.md`
   (raíz), `../README.md`.
+
+## [2026-07-25] meta | Campo `pais` en el esquema de frontmatter
+- Cambio: se añadió el campo `pais` al frontmatter (regla 2 de `CLAUDE.md`),
+  obligatorio en páginas `entity`/`concept` específicas de un solo país
+  (opcional/omitido en páginas multi-país como la síntesis comparada o la
+  fuente). Se aplicó retroactivamente a las 18 páginas existentes: los 6
+  conceptos `beneficio-tributario` (Francia, España, Portugal, Brasil, Chile,
+  Colombia) y las 12 entidades `organizacion` correspondientes. Se añadió una
+  columna `País` a las tablas de Entidades y Conceptos en `index.md`, y un
+  ítem de lint en la sección 8 de `CLAUDE.md` para detectar páginas sin
+  `pais` o con grafías inconsistentes del mismo país.
+- Motivo: el humano preguntó si convenía organizar por subcarpetas de país
+  (Colombia, Perú, Chile, España, Francia, Brasil...) dado que se concentra
+  más en Colombia, Perú y Chile. Se recomendó no usar subcarpetas —rompería
+  la organización por tipo de página y no ayuda a Obsidian a conectar nada,
+  ya que los enlaces funcionan por wikilink/etiqueta, no por ubicación en
+  disco— y en su lugar usar un campo de frontmatter filtrable, igual que
+  `idioma` en el vault de idiomas.
+- Páginas/archivos afectados: `CLAUDE.md`, `index.md`, y las 18 páginas de
+  `20_Wiki/concepts/` y `20_Wiki/entities/` listadas arriba.

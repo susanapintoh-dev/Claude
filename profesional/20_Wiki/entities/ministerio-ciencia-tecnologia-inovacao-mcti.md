@@ -2,9 +2,10 @@
 title: "Ministério da Ciência, Tecnologia e Inovação (MCTI)"
 type: entity
 subtype: organizacion
+pais: "Brasil"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["MCTI"]
 tags: ["brasil", "autoridad-tecnica"]
 related: ["[[Lei do Bem (Brasil)]]", "[[Receita Federal do Brasil (RFB)]]"]

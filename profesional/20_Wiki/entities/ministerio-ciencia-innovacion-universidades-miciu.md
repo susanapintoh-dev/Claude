@@ -2,9 +2,10 @@
 title: "Ministerio de Ciencia, Innovación y Universidades (MICIU)"
 type: entity
 subtype: organizacion
+pais: "España"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["MICIU"]
 tags: ["espana", "autoridad-tecnica"]
 related: ["[[Deducción Fiscal por I+D+i (España)]]", "[[Agencia Estatal de Administración Tributaria (AEAT)]]"]

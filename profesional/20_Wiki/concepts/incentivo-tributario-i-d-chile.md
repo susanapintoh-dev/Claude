@@ -2,9 +2,10 @@
 title: "Incentivo Tributario a la Inversión en I+D (Chile)"
 type: concept
 subtype: beneficio-tributario
+pais: "Chile"
 status: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 aliases: ["Ley 20.241", "Crédito Tributario I+D Chile"]
 tags: ["chile", "credito-fiscal", "i+d"]
 related: ["[[Corporación de Fomento de la Producción (CORFO)]]", "[[Servicio de Impuestos Internos (SII)]]", "[[Incentivos Tributarios a la CTI: Análisis Comparado]]"]
